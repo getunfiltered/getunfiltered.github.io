@@ -1,13 +1,13 @@
 ---
-category: Stuff
-path: '/stuff'
-title: 'Post a thing'
+category: Article
+path: '/article'
+title: 'Post an article of clothing'
 type: 'POST'
 
 layout: nil
 ---
 
-This method allows users to create a new thing.
+This method allows users to create an entry.
 
 ### Request
 
@@ -16,7 +16,8 @@ This method allows users to create a new thing.
 
 ```Authentication: bearer TOKEN```
 ```{
-    name: 'My new thing'
+    title: 'clothing name',
+    body: 'description'
 }```
 
 ### Response

@@ -39,11 +39,23 @@
               
         <li class='GET'><a href='#/get-stuff'>Get stuff</a></li>
               
-        <li class='POST'><a href='#/post-a-thing'>Post a thing</a></li>
-              
         <li class='PUT'><a href='#/put-a-thing'>Update a thing</a></li>
               
         <li class='DELETE'><a href='#/delete-a-thing'>Delete a thing</a></li>
+      
+    
+    </ul>
+  </li>
+
+  <li><h2>article</h2>
+    <ul>
+    
+              
+        <li class=''><a href='#'></a></li>
+      
+    
+              
+        <li class='POST'><a href='#/post-a-thing'>Post an article of clothing</a></li>
       
     
     </ul>
@@ -153,9 +165,9 @@
   </article>
 
   <article class='POST'>
-    <a name='/post-a-thing' href='#/post-a-thing'><h2><code><b>POST</b> /stuff</code> Post a thing</h2></a>
+    <a name='/post-a-thing' href='#/post-a-thing'><h2><code><b>POST</b> /article</code> Post an article of clothing</h2></a>
     <section class='body'>
-      <p>This method allows users to create a new thing.</p>
+      <p>This method allows users to create an entry.</p>
 
 <h3 id="request">Request</h3>
 
@@ -166,7 +178,8 @@
 
 <p><code>Authentication: bearer TOKEN</code>
 <code>{
-    name: 'My new thing'
+    title: 'clothing name',
+    body: 'description'
 }</code></p>
 
 <h3 id="response">Response</h3>
